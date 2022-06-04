@@ -9,14 +9,10 @@ function managerCard(manager) {
         </p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">${manager.id}</li>
-        <li class="list-group-item">${manager.email}</li>
-        <li class="list-group-item">${manager.officeNum}</li>
+        <li class="list-group-item">ID: ${manager.id}</li>
+        <li class="list-group-item">Email: <a href="mailto:${manager.email}" target="_blank" rel="noopener noreferrer">${manager.email}</a></li>
+        <li class="list-group-item">Office Number: ${manager.officeNum}</li>
       </ul>
-      <!-- <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div> -->
     </div>
   </section>`;
 }
@@ -32,14 +28,10 @@ function engineerCard(engineer) {
         </p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">${engineer.id}</li>
-        <li class="list-group-item">${engineer.email}</li>
-        <li class="list-group-item">${engineer.github}</li>
+        <li class="list-group-item">ID: ${engineer.id}</li>
+        <li class="list-group-item">Email: <a href="mailto:${engineer.email}" target="_blank" rel="noopener noreferrer">${engineer.email}</a></li>
+        <li class="list-group-item">GitHub: <a href= "https://github.com/${engineer.github} target="_blank" rel="noopener noreferrer">github.com/${engineer.github}</a></li>
       </ul>
-      <!-- <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div> -->
     </div>
   </section>`;
 }
@@ -55,14 +47,10 @@ function internCard(intern) {
         </p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">${intern.id}</li>
-        <li class="list-group-item">${intern.email}</li>
-        <li class="list-group-item">${intern.school}</li>
+        <li class="list-group-item">ID: ${intern.id}</li>
+        <li class="list-group-item">Email: <a href="mailto:${intern.email}" target="_blank" rel="noopener noreferrer">${intern.email}</a></li>
+        <li class="list-group-item">School: ${intern.school}</li>
       </ul>
-      <!-- <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div> -->
     </div>
   </section>`;
 }
