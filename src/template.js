@@ -1,6 +1,6 @@
 function managerCard(manager) {
-  return `<section class="m-5">
-    <div class="card border border-danger d-flex align-content-center flex-wrap" style="width: 18rem;">
+  return `
+    <div class="card border border-danger" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
         <h5 class="card-title">Manager</h5>
@@ -13,13 +13,12 @@ function managerCard(manager) {
         <li class="list-group-item">Email: <a href="mailto:${manager.email}" target="_blank" rel="noopener noreferrer">${manager.email}</a></li>
         <li class="list-group-item">Office Number: ${manager.officeNum}</li>
       </ul>
-    </div>
-  </section>`;
+    </div>`;
 }
 
 function engineerCard(engineer) {
-  return `<section class="m-5">
-    <div class="card border border-danger d-flex align-content-center flex-wrap" style="width: 18rem;">
+  return `
+    <div class="card border border-danger" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
         <h5 class="card-title">Engineer</h5>
@@ -32,13 +31,12 @@ function engineerCard(engineer) {
         <li class="list-group-item">Email: <a href="mailto:${engineer.email}" target="_blank" rel="noopener noreferrer">${engineer.email}</a></li>
         <li class="list-group-item">GitHub: <a href= "https://github.com/${engineer.github} target="_blank" rel="noopener noreferrer">github.com/${engineer.github}</a></li>
       </ul>
-    </div>
-  </section>`;
+    </div>`;
 }
 
 function internCard(intern) {
-  return `<section class="m-5">
-    <div class="card border border-danger d-flex align-content-center flex-wrap" style="width: 18rem;">
+  return `  
+    <div class="card border border-danger" style="width: 18rem;">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
         <h5 class="card-title">Intern</h5>
@@ -51,8 +49,7 @@ function internCard(intern) {
         <li class="list-group-item">Email: <a href="mailto:${intern.email}" target="_blank" rel="noopener noreferrer">${intern.email}</a></li>
         <li class="list-group-item">School: ${intern.school}</li>
       </ul>
-    </div>
-  </section>`;
+    </div>`;
 }
 
 function generateHTML(teamArr) {
@@ -83,7 +80,9 @@ function generateHTML(teamArr) {
   </header>
 
   <!--CARD/CONTENT SECTION-->
-  ${cards.join("\n  ")}
+  <section class="m-5 d-flex justify-content-evenly">
+    ${cards.join("\n  ")}
+  </section>
 
   <!--BOOTSTRAP JS IMPORT-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
