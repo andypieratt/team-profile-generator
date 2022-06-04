@@ -16,7 +16,7 @@ This application uses command-line prompts that navigate the user through a seri
 
 ## Demo Video:
 
-[team-profile-generator-demo-video]()
+[team-profile-generator-demo-video](https://drive.google.com/file/d/103dV4UTv8A1nOVRzbXIZUELyxIiocZV0/view)
 
 ## Instalation
 
@@ -37,6 +37,8 @@ Andrew Pieratt
 ## Tests
 
 Please refer to my "**tests**" directory and run an "npm run test" and you will see that all of the tests pass.
+
+[team-profile-generator-tests-video](https://drive.google.com/file/d/1REekDjAKwRPzUiBuWyWE2ZU1vq7BNRnN/view)
 
 - [Tests Directory](./__tests__/)
 - [Employee Test](./__tests__/employee.test.js)
