@@ -5,7 +5,7 @@ const fs = require("fs");
 const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
-const generateCards = require("./src/template");
+const generateHTML = require("./src/template");
 
 const teamArr = [];
 
@@ -122,7 +122,7 @@ function newMember() {
   inquirer
     .prompt([
       {
-        type: "checkbox",
+        type: "list",
         message: "Would you like to add another team member?",
         choices: ["Engineer", "Intern", "I am done adding team members"],
         name: "nextMember",
@@ -140,8 +140,7 @@ function newMember() {
 }
 
 function generateFile() {
-  generateCards(teamArr);
-  fs.writeFile("./dist/index.html");
+  fs.writeFileSync("./dist/index.html", generateHTML(teamArr));
 }
 
 //CALLING FUNCTIONS
